@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DailyGlow Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8ff;
+      --card: #ffffff;
+      --text: #1d1d1f;
+      --muted: #6e6e73;
+      --accent: #5e5ce6;
+      --accent2: #a653e3;
+      --border: rgba(0,0,0,0.08);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111117;
+        --card: #1c1c24;
+        --text: #f5f5f7;
+        --muted: #a1a1a6;
+        --accent: #8b87ff;
+        --accent2: #d07cff;
+        --border: rgba(255,255,255,0.08);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+    .hero {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: white;
+      border-radius: 24px;
+      padding: 28px;
+      margin-bottom: 20px;
+    }
+    .hero h1 { margin: 0 0 8px; }
+    .hero p { margin: 0; color: rgba(255,255,255,0.9); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    h2 { margin-top: 0; font-size: 1.25rem; }
+    h3 { margin-top: 22px; margin-bottom: 6px; }
+    p, li { color: var(--muted); }
+    a { color: var(--accent); }
+    code {
+      background: rgba(127,127,127,0.12);
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>DailyGlow Support</h1>
+      <p>Quick directions for creating reminders, using My Day, and managing widgets and permissions.</p>
+    </section>
+
+    <section class="card">
+      <h2>Getting Started</h2>
+      <ol>
+        <li>Open DailyGlow.</li>
+        <li>Tap <strong>Create Reminder</strong> on the Today tab, or tap the plus button on Reminders.</li>
+        <li>Enter a title and optional note.</li>
+        <li>Choose <strong>Daily</strong> for one alert at a scheduled time, or <strong>Repeating</strong> for multiple alerts within a time window.</li>
+        <li>Choose when the reminder repeats: <strong>Daily</strong>, <strong>Weekdays</strong>, <strong>Weekends</strong>, <strong>Custom Days</strong>, or <strong>One Time</strong>.</li>
+        <li>Choose the time, category, color, and any optional Calendar sync.</li>
+        <li>Tap <strong>Save</strong>.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Repeating Reminders</h2>
+      <p>
+        Repeating reminders are useful for routines such as standing, stretching, checking email,
+        drinking water, or taking short breaks.
+      </p>
+
+      <h3>Example: Workday Stand Reminder</h3>
+      <ol>
+        <li>Create a new reminder.</li>
+        <li>Set Type to <strong>Repeating</strong>.</li>
+        <li>Set Repeat to <strong>Weekdays</strong>.</li>
+        <li>Choose a start time, such as 9:00 AM.</li>
+        <li>Choose a stop time, such as 5:00 PM.</li>
+        <li>Set Frequency to every 2 hours.</li>
+        <li>Save the reminder.</li>
+      </ol>
+      <p>
+        DailyGlow will schedule the weekday pattern automatically. You do not need to recreate the
+        reminder each morning.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Using My Day</h2>
+      <p>
+        The <strong>My Day</strong> tab shows your scheduled reminders in chronological order with
+        times along the left side.
+      </p>
+      <ul>
+        <li>Repeating reminders appear at each scheduled time.</li>
+        <li>Completed occurrences show as completed.</li>
+        <li>The NOW marker shows where you are in the current day.</li>
+        <li>Use the left and right arrows to view previous or future dates.</li>
+        <li>Use the Tomorrow preview to quickly verify the next day's schedule.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Logging a Reminder as Done</h2>
+      <p>
+        On the Today screen, tap <strong>Log Done</strong> inside the Up Next card.
+      </p>
+      <p>
+        For a normal daily reminder, this marks the reminder complete for that scheduled day.
+        For a repeating reminder, DailyGlow tracks the individual occurrence so the Up Next card
+        can advance to the next scheduled item.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Quick Starts</h2>
+      <p>
+        Quick Starts are editable templates for common routines such as Stand and Stretch, Drink Water,
+        Check Email, Rest Your Eyes, Morning Planning, Medication, and Wind Down.
+      </p>
+      <ol>
+        <li>Open the Today tab.</li>
+        <li>Tap a Quick Start, or tap <strong>See All</strong>.</li>
+        <li>Adjust the schedule and options.</li>
+        <li>Tap <strong>Save</strong>.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Widgets</h2>
+      <p>
+        The DailyGlow widget can show your next reminder or a compact My Day timeline.
+      </p>
+      <p>
+        The widget reads DailyGlow reminder data through the app's shared App Group storage.
+        It does not need Apple Calendar access just to display DailyGlow reminders.
+      </p>
+      <h3>If the widget looks out of date</h3>
+      <ol>
+        <li>Open DailyGlow once.</li>
+        <li>Edit or save a reminder.</li>
+        <li>Return to the Home Screen and give the widget a moment to refresh.</li>
+        <li>If needed, remove and re-add the widget.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Notifications</h2>
+      <p>
+        DailyGlow needs notification permission to deliver alerts.
+      </p>
+      <p>
+        If notifications are off, open <strong>DailyGlow → Settings → Notifications</strong> and follow
+        the prompt to open iPhone Settings.
+      </p>
+      <p>
+        Focus modes, notification settings, and other iOS behavior can affect whether an alert is shown.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Calendar Sync</h2>
+      <p>
+        Calendar sync is optional. DailyGlow reminders work without Calendar permission.
+      </p>
+      <p>
+        If you enable Calendar sync for a reminder, DailyGlow requests Calendar access so it can create,
+        update, or remove its linked event.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Notification Schedule Limits</h2>
+      <p>
+        iOS limits how many pending local notification requests an app can keep scheduled. Very dense
+        repeating schedules can use many notification slots.
+      </p>
+      <p>
+        If DailyGlow warns that there are too many scheduled alerts, try one of the following:
+      </p>
+      <ul>
+        <li>Use a longer repeating interval.</li>
+        <li>Shorten the repeating time window.</li>
+        <li>Choose fewer custom days.</li>
+        <li>Pause another high-frequency repeating reminder.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Deleting or Pausing Reminders</h2>
+      <p>
+        Open the Reminders tab to manage saved reminders. You can edit, pause, enable, or delete them.
+        Pausing a reminder cancels its DailyGlow notifications until you enable it again.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Contact Support</h2>
+      <p>
+        If you still need help, email
+        <a href="mailto:josh.swift.dev@gmail.com?subject=DailyGlow%20Support">josh.swift.dev@gmail.com</a>.
+      </p>
+      <p>
+        When reporting a problem, please include your iPhone model, iOS version, DailyGlow version,
+        and a short description of what you expected to happen.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
